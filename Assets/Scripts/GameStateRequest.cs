@@ -6,12 +6,17 @@ using UnityEngine.UI;
 
 public class GameStateRequest : MonoBehaviour {
 
-	public Text textField;
-	
+	public CardHand playerHand;
+	public CardSlot playerPlayed;
 
-	private void SetTextResult(string message) {
-		textField.text = message;
-	}
+	[Space(20)]
+	public CardHand[] opponentHands;
+	public CardSlot[] opponentsPlayed;
+
+	[Space(20)]
+	public CardSlot trumpSlot;
+
+
 
 	public void GetRandomMessage() {
 		StartCoroutine(getMessage());
@@ -29,8 +34,6 @@ public class GameStateRequest : MonoBehaviour {
 			yield break;
 		}
 
-		Debug.Log(uwr.downloadHandler.text);
-
-		SetTextResult(uwr.downloadHandler.text);
+		//Debug.Log(uwr.downloadHandler.text);
 	}
 }

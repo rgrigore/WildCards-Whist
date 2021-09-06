@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6423383036820525318}
   - component: {fileID: 5221074353232670415}
   - component: {fileID: -6383571121481090999}
+  - component: {fileID: 5924655982314083424}
   m_Layer: 7
   m_Name: CardSlot
   m_TagString: Untagged
@@ -127,3 +128,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 140}
   m_EdgeRadius: 0
+--- !u!114 &5924655982314083424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423383036820525316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9e145c2706ca6488e44da5f701310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
